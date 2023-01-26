@@ -25,10 +25,10 @@ nate_ID = {"normal_ID" : "testcase" ,
 }
 
 nate_PW = {
-"strong":"ekdnsL1@",
-"middle":"ekdnsl12@@@",
+"strong":"ekdnsasgL1@",
+"middle":"ekdnagsl12@@@",
 "weak":"ekdnsl1234",
-"continuity":"ekdnsl123123",
+"continuity":"ekgasl123123",
 "not_included_ID" : "qT#@DFVD" ,
 "abnormal_ID" : "이건비밀번",
 "sameID":"testcase",
@@ -41,7 +41,7 @@ nate_PW = {
 
 nate_Email = {
 
-"normal_Email_1":"ekdnsl@gmail.com",
+"normal_Email_1":"ekdnsdfwsl@gmail.com",
 "normal_Email_2":"wo12k@wl.com",
 "address_wrong_Email_1":"abc",
 "address_wrong_Email_2":"asd.dg",
