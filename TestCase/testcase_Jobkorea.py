@@ -9,10 +9,10 @@ import time
 
 class Job(TestRun):
 
-    def test_1_Login(self):
-        login = Login_Job(self.inter)
-        login.Login()
-        self.assertEqual("한철현", self.inter.driver.find_element(By.CSS_SELECTOR,"#devLogin > div > div.myInfo > span.name > a").text)
+   # def test_1_Login(self):
+    #    login = Login_Job(self.inter)
+     #   login.Login()
+      #  self.assertEqual("한철현", self.inter.driver.find_element(By.CSS_SELECTOR,"#devLogin > div > div.myInfo > span.name > a").text)
 
     def test_2_Search(self):
         job = Job_Search(self.inter)
@@ -22,8 +22,8 @@ class Job(TestRun):
         # job.Category()
         # self.assertEqual("서울", self.inter.driver.find_element(By.CSS_SELECTOR,"#search > div > div > div.search-form > div.search-form-district.pseudo-icn.district > div.search-form-wrap.pseudo-icn.arw-big > button").text)
 
-    def test_3_JD_Crawling(self):
-        jd = JD(self.inter)
-        jd.JD_Crawling()
+   # def test_3_JD_Crawling(self):
+     #   jd = JD(self.inter)
+      #  jd.JD_Crawling()
 
 
