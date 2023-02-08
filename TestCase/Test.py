@@ -19,9 +19,8 @@ class TestRun(unittest.TestCase):
     
     @classmethod
     def tearDownClass(cls) -> None:
-        
         cls.inter.driver.quit()
-        unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test_result'))
+    
         
         
 if __name__ == '__main__':
