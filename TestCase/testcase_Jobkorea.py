@@ -1,4 +1,4 @@
-from Pages.Jobkorea.PageLogin import Login_Job
+from tpffpsldna.Pages.Jobkorea.PageLogin import Login_Job
 from tpffpsldna.Pages.Jobkorea.PageSearch import Job_Search
 from tpffpsldna.Pages.Jobkorea.Page_JDC import JD
 
