@@ -15,14 +15,14 @@ class TestRun(unittest.TestCase):
         pass
 
     def tearDown(self) -> None:
-        return xmlrunner.XMLTestRunner(output='test_result')
+        pass
     
     @classmethod
     def tearDownClass(cls) -> None:
-        unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test_result'))
+        
         cls.inter.driver.quit()
-       # unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test_result'))
-        return xmlrunner.XMLTestRunner(output='test_result')
+        unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test_result'))
+        
         
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestRun)
