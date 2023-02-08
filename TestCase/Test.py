@@ -1,6 +1,6 @@
 import time
-# import unittest
-from xmlrunner.unittest import unittest
+import unittest
+
 import xmlrunner
 
 from tpffpsldna.WebDriver.Driver import Driver
