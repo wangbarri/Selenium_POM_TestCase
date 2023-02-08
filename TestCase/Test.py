@@ -16,8 +16,6 @@ class TestRun(unittest.TestCase):
 
     def tearDown(self) -> None:
         pass
-    def runner(output='test-reports'):
-        return xmlrunner.XMLTestRunner(output=output)
     
     @classmethod
     def tearDownClass(cls) -> None:
@@ -26,3 +24,4 @@ class TestRun(unittest.TestCase):
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestRun)
     unittest.TextTestRunner(verbosity=2).run(suite)
+    unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
