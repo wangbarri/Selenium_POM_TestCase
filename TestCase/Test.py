@@ -1,5 +1,6 @@
 import time
 import unittest
+import xmlrunner
 
 from tpffpsldna.WebDriver.Driver import Driver
 
@@ -23,5 +24,4 @@ class TestRun(unittest.TestCase):
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestRun)
     unittest.TextTestRunner(verbosity=2).run(suite)
-    import xmlrunner
     unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
