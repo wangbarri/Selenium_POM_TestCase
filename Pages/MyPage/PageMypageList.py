@@ -28,6 +28,7 @@ class MypageList(BaseItem):
 
     like_btn = (By.CSS_SELECTOR,"#buy_option_area > div.box-btn-buy.wrap-btn-buy > div.btn_mylike > a > i")
     basket_btn = (By.XPATH,'//*[@id="buy_option_area"]/div[7]/div[3]/a')
+    popup_close = (By.CSS_SELECTOR,"body > div > div > div > div > a.modal__btn.modal__btn--secondary")
     
     def __init__(self, driver):
         super(MypageList,self).__init__(driver)
@@ -45,7 +46,8 @@ class MypageList(BaseItem):
         WebDriverWait(driver=self.inter.driver, timeout=10).until(ec.visibility_of_element_located((By.CSS_SELECTOR,"[value='01.화이트/화이트']"))).click()
         self.Click(self.item_1_option2)
         WebDriverWait(driver=self.inter.driver, timeout=10).until(ec.visibility_of_element_located((By.CSS_SELECTOR,"[value='XL']"))).click()
-        time.sleep(.5)
+        time.sleep(3)
+        self.Click(self.popup_close)
         self.Click(self.basket_btn)
         #self.Click(self.like_btn)
         time.sleep(1)
