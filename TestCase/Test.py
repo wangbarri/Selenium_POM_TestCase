@@ -1,5 +1,5 @@
 import time
-# import unittest
+import unittest
 import xmlrunner.unittest
 import xmlrunner
 
