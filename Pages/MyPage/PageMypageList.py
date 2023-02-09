@@ -27,8 +27,8 @@ class MypageList(BaseItem):
     item_2_option = (By.ID,"option1")
 
     like_btn = (By.CSS_SELECTOR,"#buy_option_area > div.box-btn-buy.wrap-btn-buy > div.btn_mylike > a > i")
-    basket_btn = (By.XPATH,'//*[@id="buy_option_area"]/div[7]/div[3]/a')
-    popup_close = (By.CSS_SELECTOR,"body > div > div > div > div > a.modal__btn.modal__btn--secondary")
+    basket_btn = (By.CSS_SELECTOR,"#buy_option_area > div.box-btn-buy.wrap-btn-buy > div.btn_cart > a")
+    popup_close = (By.XPATH,'/html/body/div/div/div/div/a[1]')
     
     def __init__(self, driver):
         super(MypageList,self).__init__(driver)
