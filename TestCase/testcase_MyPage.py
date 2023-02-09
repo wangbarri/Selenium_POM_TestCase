@@ -18,7 +18,8 @@ class TestCase(TestRun):
         login.Login_send_keys_PW()
         login.Login_btn()
         self.assertEqual(self.inter.driver.current_url, "https://www.musinsa.com/app/")
-
+        print("이거다")
+         
     def test_2_Basket_List(self):
         BK = MypageList(self.inter)
         BK.get()
