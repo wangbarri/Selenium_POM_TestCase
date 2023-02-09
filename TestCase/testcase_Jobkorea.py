@@ -17,7 +17,7 @@ class Job(TestRun):
     def test_1_Search(self):
         job = Job_Search(self.inter)
         job.get()
-        # job.Serch_JD()
+        job.Serch_JD()
         # job.Local_Conditions()
         # job.Category()
         # self.assertEqual("서울", self.inter.driver.find_element(By.CSS_SELECTOR,"#search > div > div > div.search-form > div.search-form-district.pseudo-icn.district > div.search-form-wrap.pseudo-icn.arw-big > button").text)
