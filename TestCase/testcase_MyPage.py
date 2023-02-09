@@ -11,7 +11,7 @@ import time
 
 class TestCase(TestRun):
 
-   def test_1_Login(self):
+    def test_1_Login(self):
         login = Login(self.inter)
         login.get()
         login.Login_send_keys_ID()
