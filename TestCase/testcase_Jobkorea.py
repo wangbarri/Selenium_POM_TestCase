@@ -9,10 +9,10 @@ import time
 
 class Job(TestRun):
 
-   # def test_1_Login(self):
-    #    login = Login_Job(self.inter)
-     #   login.Login()
-      #  self.assertEqual("한철현", self.inter.driver.find_element(By.CSS_SELECTOR,"#devLogin > div > div.myInfo > span.name > a").text)
+    def test_1_Login(self):
+       login = Login_Job(self.inter)
+       login.Login()
+       self.assertEqual("한철현", self.inter.driver.find_element(By.CSS_SELECTOR,"#devLogin > div > div.myInfo > span.name > a").text)
 
     def test_1_Search(self):
         job = Job_Search(self.inter)
