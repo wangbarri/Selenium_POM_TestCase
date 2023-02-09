@@ -45,11 +45,11 @@ class MypageList(BaseItem):
         WebDriverWait(driver=self.inter.driver, timeout=10).until(ec.visibility_of_element_located((By.CSS_SELECTOR,"[value='01.화이트/화이트']"))).click()
         self.Click(self.item_1_option2)
         WebDriverWait(driver=self.inter.driver, timeout=10).until(ec.visibility_of_element_located((By.CSS_SELECTOR,"[value='XL']"))).click()
-        time.sleep(3)
+        time.sleep(2)
         self.Click(self.like_btn)
-        time.sleep(3)
+        time.sleep(1)
         self.Click(self.basket_btn)
-        time.sleep(3)
+        time.sleep(1)
         self.inter.driver.back()
 
     def Item_2_Page(self):
@@ -58,9 +58,9 @@ class MypageList(BaseItem):
         WebDriverWait(driver=self.inter.driver, timeout=10).until(ec.visibility_of_element_located((By.CSS_SELECTOR,"[value='L']"))).click()
         time.sleep(2)
         self.Click(self.like_btn)
-        time.sleep(3)
+        time.sleep(1)
         self.Click(self.basket_btn)
-        time.sleep(3)
+        time.sleep(1)
         self.inter.driver.back()
     
 
