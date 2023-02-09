@@ -1,11 +1,11 @@
 ID = {
-    "ID":"무신사 아이디",
+    "ID":"eldmsl",
     "Naver_ID":"네이버 아이디", 
     "JobKorea_ID":"잡코리아 아이디"
 }
 
 PW = {
-    "PW":"무신사 비밀번호",
+    "PW":"je09122je",
     "Naver_PW" :"네이버 비밀번호" ,
     "JobKorea_PW":"잡코리아 비밀번호"
 }
