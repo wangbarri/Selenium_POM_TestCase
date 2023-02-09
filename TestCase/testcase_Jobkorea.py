@@ -14,7 +14,7 @@ class Job(TestRun):
        login.Login()
        self.assertEqual("한철현", self.inter.driver.find_element(By.CSS_SELECTOR,"#devLogin > div > div.myInfo > span.name > a").text)
 
-    def test_1_Search(self):
+    def test_2_Search(self):
         job = Job_Search(self.inter)
         job.get()
         job.Serch_JD()
