@@ -32,6 +32,7 @@ class TestCase(TestRun):
     def test_3_Cart_item_Check(self):
         Cart = Check(self.inter)
         Cart.Check_Basket()
-        self.assertEqual(self.inter.driver.find_element(By.XPATH,"//*[@id='page_cart']/form[1]/div/div[1]/table/tbody/tr[3]/td/table/tbody/tr/td[3]/div[2]/p[2]").text, "[무신사 스탠다드] 베이식 긴팔 티셔츠 2팩")
+        self.assertEqual(self.inter.driver.find_element(By.XPATH,'//*[@id="page_cart"]/form[1]/div/div[1]/table/tbody/tr[1]/td/table/tbody/tr/td[3]/div[2]/p[2]/a').text, "[무신사 스탠다드] 베이식 긴팔 티셔츠 2팩")
+
         
    
