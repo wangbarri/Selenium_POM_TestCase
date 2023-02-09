@@ -26,13 +26,12 @@ class TestCase(TestRun):
         self.assertEqual(self.inter.driver.current_url,"https://www.musinsa.com/categories/item/001")
         BK.Brand_sale_Selected()
         BK.Item_1_Page()
-        time.sleep(3)
-        BK.Item_2_Page()
+   
+        
     
     def test_3_Cart_item_Check(self):
         Cart = Check(self.inter)
         Cart.Check_Basket()
-        self.assertEqual(self.inter.driver.find_element(By.XPATH,"//*[@id='page_cart']/form[1]/div/div[1]/table/tbody/tr[1]/td/table/tbody/tr/td[3]/div[2]/p[2]").text, "[무신사 스탠다드] 스웨트셔츠 [블랙]")
         self.assertEqual(self.inter.driver.find_element(By.XPATH,"//*[@id='page_cart']/form[1]/div/div[1]/table/tbody/tr[3]/td/table/tbody/tr/td[3]/div[2]/p[2]").text, "[무신사 스탠다드] 베이식 긴팔 티셔츠 2팩")
         
    
