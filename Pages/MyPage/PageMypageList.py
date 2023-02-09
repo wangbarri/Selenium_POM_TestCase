@@ -1,6 +1,6 @@
 from tpffpsldna.Pages.Base import BaseItem
 from tpffpsldna.Config.Accounts import *
-
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
@@ -47,8 +47,7 @@ class MypageList(BaseItem):
         WebDriverWait(driver=self.inter.driver, timeout=10).until(ec.visibility_of_element_located((By.CSS_SELECTOR,"[value='XL']"))).click()
         time.sleep(2)
         self.Click(self.like_btn)
-        time.sleep(1)
-        self.Click(self.basket_btn)
+        self.inter.driver.find_element(By.CSS_SELECTOR,"#buy_option_area > div.box-btn-buy.wrap-btn-buy > div.btn_cart > a > i").send_keys(Keys.ENTER)
         time.sleep(1)
         self.inter.driver.back()
 
