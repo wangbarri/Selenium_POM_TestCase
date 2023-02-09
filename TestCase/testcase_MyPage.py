@@ -26,6 +26,7 @@ class TestCase(TestRun):
         self.assertEqual(self.inter.driver.current_url,"https://www.musinsa.com/categories/item/001")
         BK.Brand_sale_Selected()
         BK.Item_1_Page()
+        time.sleep(3)
         BK.Item_2_Page()
     
     def test_3_Cart_item_Check(self):
